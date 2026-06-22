@@ -43,8 +43,8 @@
         </style>
 
         <img src="imagem-blog.png"
-           alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-           <div class="artigo-autor">
+            alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+        <div class="artigo-autor">
     </header>
     <main>
         <div>
@@ -55,6 +55,15 @@
         </div>
 
     </main>
+
+    <script>
+        const botao = document.querySelector("button");
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    </script>
 
 </body>
 
